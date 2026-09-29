@@ -64,6 +64,7 @@ class Estudio(Imovel):
 
         self.vagas = vagas
         self.adicional_vaga = 0
+        self.adicional_estacionamento = 0
     
     def calcular_aluguel(self):
         valor = self.valor_base
@@ -73,5 +74,6 @@ class Estudio(Imovel):
 
             vagas_adicional = self.vagas - 2
             self.adicional_estacionamento += vagas_adicional * 60
+            valor += self.adicional_vaga
             valor += self.adicional_estacionamento
         return valor

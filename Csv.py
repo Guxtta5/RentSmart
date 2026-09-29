@@ -1,10 +1,10 @@
 # função para criar o CSV em excel
-
+from Imovel import *
 import csv
 
 def gerar_csv(aluguel, parcela_taxa, quantidade_parcelas):
 
-    with open("lucação.csv","w", newline="",encoding="utf-8") as arquivo:
+    with open("locação.csv","w", newline="",encoding="utf-8") as arquivo:
         escritor = csv.writer(arquivo, delimiter=";")
         escritor.writerow([
             "Mês",
