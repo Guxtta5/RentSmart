@@ -34,7 +34,6 @@ class Apartamento (Imovel):
         return valor
 
 # ESSA E NOSSA CLASSE CASA ONDE ELA HERDA ALGUMAS COISAS DA NOSSA CLASSE BASE
-
 class Casa(Imovel):
     def __init__(self, quarto, garagem):
         super().__init__("Casa", 900)
@@ -58,6 +57,7 @@ class Casa(Imovel):
 
         return valor
 
+# ESSA E NOSSA CLASSE Estúdio ONDE ELA HERDA ALGUMAS COISAS DA NOSSA CLASSE BASE
 class Estudio(Imovel):
     def __init__(self, vagas):
         super().__init__("Estúdio", 1200)
